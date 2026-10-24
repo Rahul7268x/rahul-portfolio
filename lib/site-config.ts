@@ -1,14 +1,19 @@
-/**
- * Replace the YOUR_* placeholders with your real details.
- * Links with a placeholder value render as inert anchors until updated.
+/** 
+ * PERSONAL DETAILS — Replace the placeholders below with your real information.
+ * 
+ * GitHub:  go to https://github.com/YOUR_USERNAME and copy your profile URL
+ * LinkedIn: go to https://linkedin.com/in/YOUR_USERNAME and copy your profile URL
+ * Email:  use your real email address
+ * Site URL: your live domain (e.g. https://yourname.com)
  */
+
 export const siteConfig = {
   name: 'Rahul Kumar',
   title: 'Frontend Developer',
-  siteUrl: 'https://YOUR_DOMAIN.com',
-  email: 'YOUR_EMAIL',
-  github: 'YOUR_GITHUB_URL',
-  linkedin: 'YOUR_LINKEDIN_URL',
+  siteUrl: 'https://rahul-portfolio-phi-amber.vercel.app/',
+  email: 'rahulkumar2001son@gmail.com',
+  github: 'https://github.com/Rahul7268x',
+  linkedin: 'https://www.linkedin.com/in/rahul-kumar-066795218',
   resume: '/Rahul_Kumar_Frontend_Developer_Resume.pdf',
 } as const
 

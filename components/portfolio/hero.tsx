@@ -1,8 +1,9 @@
-import { ArrowRight, Download, MapPin, UserRound } from 'lucide-react'
+import { ArrowRight, Download, MapPin } from 'lucide-react'
 import { heroBadges, quickStats } from '@/lib/portfolio-data'
 import { linkProps, siteConfig } from '@/lib/site-config'
 import { GitHubIcon, LinkedInIcon } from './brand-icons'
 import { TechBadge, buttonClass } from './primitives'
+import { ProfilePhoto } from './ProfilePhoto'
 
 const codeLines: { indent: number; tokens: { text: string; tone?: 'key' | 'str' | 'kw' | 'dim' }[] }[] = [
   { indent: 0, tokens: [{ text: 'const ', tone: 'kw' }, { text: 'developer' }, { text: ' = {', tone: 'dim' }] },
@@ -49,19 +50,6 @@ function CodeWindow() {
           ))}
         </code>
       </pre>
-    </div>
-  )
-}
-
-function ProfilePhotoPlaceholder() {
-  return (
-    <div
-      role="img"
-      aria-label="Profile photo placeholder"
-      className="flex size-28 flex-col items-center justify-center rounded-full border-2 border-dashed border-primary/40 bg-background text-muted-foreground shadow-lg sm:size-32"
-    >
-      <UserRound className="size-9" aria-hidden="true" />
-      <span className="mt-1 font-mono text-[10px]">your photo</span>
     </div>
   )
 }
@@ -124,7 +112,7 @@ export function Hero() {
         <div className="relative mx-auto w-full max-w-md lg:max-w-none">
           <div className="mb-[-3.5rem] flex justify-end pr-6 sm:pr-8">
             <div className="relative z-10">
-              <ProfilePhotoPlaceholder />
+              <ProfilePhoto />
             </div>
           </div>
           <CodeWindow />
