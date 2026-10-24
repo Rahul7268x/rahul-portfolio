@@ -9,7 +9,7 @@ export const siteConfig = {
   email: 'YOUR_EMAIL',
   github: 'YOUR_GITHUB_URL',
   linkedin: 'YOUR_LINKEDIN_URL',
-  resume: '/assets/resume/Rahul-Kumar-Resume.pdf',
+  resume: '/Rahul_Kumar_Frontend_Developer_Resume.pdf',
 } as const
 
 export function isPlaceholder(value: string) {
