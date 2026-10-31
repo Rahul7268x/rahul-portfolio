@@ -13,8 +13,8 @@ const channels = [
 export function Contact() {
   return (
     <Section id="contact" labelledBy="contact-title">
-      <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-start">
-        <Reveal>
+      <div className="grid gap-10 lg:grid-cols-[1.2fr_1fr] lg:items-start min-w-0">
+        <Reveal className="min-w-0">
           <SectionHeading
             id="contact-title"
             eyebrow="06 / Contact"
@@ -37,7 +37,7 @@ export function Contact() {
           </div>
         </Reveal>
 
-        <Reveal delay={100}>
+        <Reveal delay={100} className="min-w-0">
           <ul className="flex flex-col divide-y divide-border rounded-xl border border-border bg-card">
             {channels.map(({ label, value, href, Icon, external }) => {
               const props = external ? linkProps(value) : { href }
