@@ -27,24 +27,35 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Rahul Kumar' }],
   alternates: { canonical: '/' },
+
   openGraph: {
     type: 'website',
     url: '/',
     title,
     description,
     siteName: 'Rahul Kumar — Frontend Developer',
+    images: [
+      {
+        url: '/rahul.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Rahul Kumar — Frontend Developer',
+      },
+    ],
   },
+
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title,
     description,
+    images: ['/rahul.jpg'],
   },
+
   icons: {
     icon: [{ url: '/favicon-rk.svg', type: 'image/svg+xml' }],
     apple: '/apple-icon.png',
   },
 }
-
 export const viewport: Viewport = {
   colorScheme: 'dark light',
   themeColor: [
